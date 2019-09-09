@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txtViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:text="Tài khoản" />
+
+    <TextView
+        android:id="@+id/txtViewMK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtMatKhau"
+        android:text="Mật Khẩu" />
+
+    <EditText
+        android:id="@+id/edtTaiKhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150px"
+        android:layout_alignParentTop="true"
+        android:hint="Không được để trống"
+        android:ems="10"
+        android:inputType="none|textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/edtMatKhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150px"
+        android:layout_below="@+id/txtViewID"
+        android:ems="10"
+        android:hint="Không được để trống"
+        android:inputType="none|textPersonName"
+        />
+
+    <CheckBox
+        android:id="@+id/ckLuuThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150px"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="97dp"
+        android:text="Lưu Thông Tin" />
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="145dp"
+        android:background="@color/colorPrimary"
+        android:text="Đăng nhập" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnDangNhap"
+        android:layout_marginLeft="360px"
+        android:background="@color/colorPrimary"
+        android:text="Thoát" />
+</RelativeLayout>
